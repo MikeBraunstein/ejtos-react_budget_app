@@ -7,6 +7,7 @@ import Budget from './components/Budget';
 
 // Add code to import the other components here under
 import Remaining from './components/Remaining';
+import ExpenseTotal from './components/ExpenseTotal';
 
 
 import { AppProvider } from './context/AppContext';
@@ -28,7 +29,11 @@ const App = () => {
                         </div>
                     }        
 
-                        {/* Add ExpenseTotal component here under */}        
+                        {/* Add ExpenseTotal component here under */
+                        <div className='col-sm'>
+                            <ExpenseTotal />
+                        </div>
+                    }        
                        
                         {/* Add ExpenseList component here under */}         
 
