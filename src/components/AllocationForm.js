@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { AppContext } from '../context/AppContext';
 
 const AllocationForm = (props) => {
@@ -18,7 +18,7 @@ const AllocationForm = (props) => {
 
     const expense = {
         name: name,
-        cost: partseInt(cost),
+        cost: parseInt(cost),
     };
     if(action === "Reduce") {
         dispatch({
