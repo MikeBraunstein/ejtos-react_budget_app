@@ -32,14 +32,15 @@ const Budget = () => {
     
     
     return (
-        <div className='alert alert-secondary'>
-            <p>{currency}</p>
+        <div className='alert alert-secondary'>Budget:
+            <label for="budget" id="inputGroupSelect02">{currency}
             <input
+                id="budget"
                 type="number"
                 value={budget}
                 onInput={(event) => changeBudget(event.target.value)}
                 step="10">
-            </input>
+            </input></label>
             {/*<span>Budget: £{budget}</span>*/}
         </div>
     );
