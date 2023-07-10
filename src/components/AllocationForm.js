@@ -59,7 +59,8 @@ const AllocationForm = (props) => {
               <option value="Reduce" name="Reduce">Reduce</option>
                 </select>
                     <div className="input-group-prepend">
-                    <label id="inputGroupSelect02" style={{ marginLeft: '2rem' }} htmlFor='cost'> {currency}
+                    
+                    <span style={{ "position":"relative","right":"-20px"}}> {currency} </span>
                     <input
                         required='required'
                         type='number'
@@ -68,7 +69,6 @@ const AllocationForm = (props) => {
                         style={{ marginLeft: '2rem' , size: 10}}
                         onChange={(event) => setCost(event.target.value)}>
                         </input>
-                    </label>
                     </div>
 
                     <button className="btn btn-primary" onClick={submitEvent} style={{marginLeft: '2rem' }}>

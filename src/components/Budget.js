@@ -33,7 +33,7 @@ const Budget = () => {
     
     return (
         <div className='alert alert-secondary'>Budget:
-            <label for="budget" id="inputGroupSelect02">{currency}
+            <label htmlFor="budget" id="inputGroupSelect02">{currency}
             <input
                 id="budget"
                 type="number"

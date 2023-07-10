@@ -44,23 +44,28 @@ const App = () => {
                             <Currency />
                         </div>
                     }      
-                       
+                <h3 className='mt-3'>Allocation</h3>
                         {/* Add ExpenseList component here under */
-                        <div className='col-sm'>
-                            <ExpenseList />
+                        <div className='row'>
+                            <div className='col-sm'>
+                                    <ExpenseList />
+                                </div>
                         </div>
                     }         
 
-                        {/* Add ExpenseItem component here under */
+                        {/* Add ExpenseItem component here under 
                         <div className='col-sm'>
                             <ExpenseItem />
-                        </div>
+                        </div>*/
                     }        
 
+                    <h3 className='mt-3'>Change allocation</h3>
                         {/* Add AllocationForm component here under */
+                    <div className='row mt-3'>
                         <div className='col-sm'>
-                            <AllocationForm />
+                            <AllocationForm/>
                         </div>
+                    </div>
                     }        
 
                 </div>
